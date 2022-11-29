@@ -11,8 +11,10 @@ When using the XML file, keep a couple things in mind
 1) Before going through the effort to create the XML config files, make sure you have a way to place the XML file in the correct directly on the MTR. Options include:
 
 -Remote Powershell (must be enabled on the MTR - see https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-operations)
+
 -InTune (it would be a pain to load a unique script for each MTR in InTune, but for bulk settings updates this could work. A good overview here       
         https://blog.chiffers.com/2021/09/14/managing-a-microsoft-teams-room-mtr-device-with-intune-part-3-configuration-profiles/)
+
 -Config Manager if joined to the domain.
 
 2) You do not have to use the entire template. As long as the syntax of the XML is correct, you can use only what you need.
