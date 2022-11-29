@@ -10,12 +10,12 @@ https://learn.microsoft.com/en-us/microsoftteams/rooms/xml-config-file
 When using the XML file, keep a couple things in mind
 1) Before going through the effort to create the XML config files, make sure you have a way to place the XML file in the correct directly on the MTR. Options include:
 
-        -Remote Powershell (must be enabled on the MTR - see https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-operations)
+   -Remote Powershell (must be enabled on the MTR - see https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-operations)
 
-        -InTune (it would be a pain to load a unique script for each MTR in InTune, but for bulk settings updates this could work. A good overview here       
+    -InTune (it would be a pain to load a unique script for each MTR in InTune, but for bulk settings updates this could work. A good overview here       
         https://blog.chiffers.com/2021/09/14/managing-a-microsoft-teams-room-mtr-device-with-intune-part-3-configuration-profiles/)
 
-        -Config Manager if joined to the domain.
+     -Config Manager if joined to the domain.
 
 2) You do not have to use the entire template. As long as the syntax of the XML is correct, you can use only what you need.
 3) You can customize the XML to be a full, initial configuration for the MTR - including the resource account name and password *or* use only certain parts of the XML to update one or more settings (e.g. Turn Cortana off across all MTRs).  If you are not using the resource account/password in the script you will not need the input file. 
