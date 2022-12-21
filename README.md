@@ -56,7 +56,8 @@ To get started
     -Column 4 is the MTR IP address or hostname. This column is only used to name the output XML files. It is not used in the XML.
     -Column 5 is an NTP address. This is not used at all in the MTR_Create_XML.ps1 file, but is referenced below for the MTR config script.
 3.Use the MTR_Create_XML.ps1 file to stage unique XML files for each MTRoW device. The deployment script looks for these files in the C:\Temp\mtr_xml\xml_files directory. Of course, you can customize this. 
-4. Run the script. I've found it takes ~5 minutes depending on how many files are being pushed, size of the files and network connection to the remote MTRoW devices.
+4. Customize the variables in the script.  You will need to declare variables for local files, remote file locations, remote machine admin password etc...
+5. Run the script. I've found it takes ~5 minutes depending on how many files are being pushed, size of the files and network connection to the remote MTRoW devices.
    
    
    
